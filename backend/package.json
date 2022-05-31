@@ -1,0 +1,16 @@
+{
+  "name": "easiware-backend-test",
+  "version": "0.0.1",
+  "description": "easiware Backend Challenge",
+  "repository": "https://github.com/easiware/jobs",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}

@@ -2,3 +2,9 @@
 frontend/dist
 frontend/.cache
 frontend/node_modules
+
+# backend build artifacts
+backend/node_modules
+
+# backend run artifacts
+backend/output.json
