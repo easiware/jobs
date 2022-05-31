@@ -6,7 +6,9 @@ Looking for a job? Check out our [open positions](https://www.welcometothejungle
 
 We believe our tech team should have a strong culture and build common conventions and coding style. We should be able to work together as a team. Ideally it should be impossible to know (except when _git blaming_) who wrote a given piece of code; we call this **Shared ownership**.
 
-This culture and shared coding practices are meant to be evolutive and represent the current team in place. They must be opinionated, yet shared and represent the industry coding standards and best practices. This:
+This culture and shared coding practices are meant to be evolutive and represent the current team in place. They must be opinionated, yet shared and represent the industry coding standards and best practices.
+
+This:
 
 - allows junior developers or newcomers to quickly onboard on the project
 - improves overall code quality and decreases regressions
@@ -56,8 +58,17 @@ Please commit as frequently as possible to make the review easier.
 
 ## Test
 
-To make sure that you will not break anything in the existing code, we added a log of the simulation in the _output.txt_ file. Make sure that your code is able to generate the same file. You can generate a new file by running the following commands:
+To make sure that you will not break anything in the existing code, we added a log of the simulation in the `expected_output.json` file.
+Your code should generate the same content in `output.json`; of course if you add some drugs, you will have to change the content of `expected_output.json`.
+
+You should be able to generate an `output.json` file with the right content with the following command:
 
 ```sh
 yarn start
+```
+
+You can run the tests by running:
+
+```sh
+yarn test
 ```
