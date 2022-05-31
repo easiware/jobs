@@ -1,0 +1,4 @@
+# frontend build artifacts
+frontend/dist
+frontend/.cache
+frontend/node_modules
