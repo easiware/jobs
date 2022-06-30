@@ -10,6 +10,11 @@ export class Pharmacy {
   constructor(drugs = []) {
     this.drugs = drugs;
   }
+
+  /**
+   * @description Update all drug values every time it's called.
+   * @returns Drugs[]
+   */
   updateBenefitValue() {
     for (var i = 0; i < this.drugs.length; i++) {
       if (
