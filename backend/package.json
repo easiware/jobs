@@ -7,10 +7,12 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "dev": "nodemon index.js --config nodemon-config.json",
     "start": "node index.js",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage=true"
   },
   "devDependencies": {
-    "jest": "^28.1.0"
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.18"
   }
 }

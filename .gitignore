@@ -8,3 +8,7 @@ backend/node_modules
 
 # backend run artifacts
 backend/output.json
+
+#backend coverage result
+coverage-final.json
+coverage

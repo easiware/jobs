@@ -64,11 +64,11 @@ Your code should generate the same content in `output.json`; of course if you ad
 You should be able to generate an `output.json` file with the right content with the following command:
 
 ```sh
-yarn start
+npm run start
 ```
 
 You can run the tests by running:
 
 ```sh
-yarn test
+npm run test
 ```
