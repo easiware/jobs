@@ -12,8 +12,9 @@ const trial = new Pharmacy(drugs);
 const log = [];
 
 for (let elapsedDays = 0; elapsedDays < 30; elapsedDays++) {
-  const updated = trial.updateBenefitValue()
-  log.push(JSON.parse(JSON.stringify(updated)))
+  const updatedDrugs = trial.updateBenefitValue();
+  const updatedDrugsDeepClone = updatedDrugs.map((drug) => ({ ...drug }));
+  log.push(updatedDrugsDeepClone);
 }
 
 /* eslint-disable no-console */
